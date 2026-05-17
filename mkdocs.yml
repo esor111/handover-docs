@@ -1,0 +1,98 @@
+site_name: Kaha Platform — Engineering Handover
+site_description: Engineering handover documentation for the Kaha platform
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+validation:
+  omitted_files: ignore
+  absolute_links: ignore
+  unrecognized_links: ignore
+
+nav:
+  - Home: HANDOVER.md
+  - Glossary: GLOSSARY.md
+  - Onboarding (Day 1 / Week 1): onboarding.md
+  - Service Architecture: kaha-platform/service-architecture.md
+  - Services:
+      - kaha-main-api-v3:
+          - Overview: kaha-platform/kaha-main-api/overview.md
+          - Architecture: kaha-platform/kaha-main-api/architecture.md
+          - Data Model: kaha-platform/kaha-main-api/data-model.md
+          - Decisions (ADRs): kaha-platform/kaha-main-api/decisions.md
+          - Runbook: kaha-platform/kaha-main-api/runbook.md
+      - kaha-notification:
+          - Overview: kaha-platform/kaha-notification/overview.md
+          - Architecture: kaha-platform/kaha-notification/architecture.md
+          - Data Model: kaha-platform/kaha-notification/data-model.md
+          - Decisions (ADRs): kaha-platform/kaha-notification/decisions.md
+          - Runbook: kaha-platform/kaha-notification/runbook.md
+      - kaha-business-subscription:
+          - Overview: kaha-platform/kaha-subscription/overview.md
+          - Architecture: kaha-platform/kaha-subscription/architecture.md
+          - Data Model: kaha-platform/kaha-subscription/data-model.md
+          - Decisions (ADRs): kaha-platform/kaha-subscription/decisions.md
+          - Runbook: kaha-platform/kaha-subscription/runbook.md
+      - restaurant-ecommerce:
+          - Overview: kaha-platform/kaha-ecommerce/overview.md
+          - Architecture: kaha-platform/kaha-ecommerce/architecture.md
+          - Data Model: kaha-platform/kaha-ecommerce/data-model.md
+          - Decisions (ADRs): kaha-platform/kaha-ecommerce/decisions.md
+          - Runbook: kaha-platform/kaha-ecommerce/runbook.md
+  - Hospitality:
+      - Hotel HMS:
+          - Overview: hotel/overview.md
+          - Architecture: hotel/architecture.md
+          - Data Model: hotel/data-model.md
+          - Decisions (ADRs): hotel/decisions.md
+          - Runbook: hotel/runbook.md
+      - Hostel:
+          - Overview: hostel/overview.md
+          - Architecture: hostel/architecture.md
+          - Data Model: hostel/data-model.md
+          - Decisions (ADRs): hostel/decisions.md
+          - Runbook: hostel/runbook.md

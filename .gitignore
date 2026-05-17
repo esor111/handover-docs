@@ -8,3 +8,10 @@ server-env.md
 *serviceAccount*.json
 *.pem
 node_modules/
+
+# MkDocs build output + local env
+/_site/
+site/
+.cache/
+.venv/
+__pycache__/
