@@ -28,6 +28,13 @@ theme:
 
 plugins:
   - search
+  - mermaid2:
+      version: 10.9.1
+      arguments:
+        securityLevel: 'loose'
+        startOnLoad: true
+        flowchart:
+          htmlLabels: true
 
 markdown_extensions:
   - admonition
@@ -45,7 +52,7 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+          format: !!python/name:mermaid2.fence_mermaid_custom
 
 validation:
   omitted_files: ignore
