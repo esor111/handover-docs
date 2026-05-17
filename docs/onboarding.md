@@ -10,7 +10,7 @@ The handover is large. This page tells you **what to read, in what order, and wh
 
 Goal: understand the shape of the system before any code.
 
-1. [`HANDOVER.md`](HANDOVER.md) — the system map + repo directory (15 min)
+1. [`index.md`](index.md) — the system map + repo directory (15 min)
 2. [`GLOSSARY.md`](GLOSSARY.md) — skim all, you'll re-read as needed (15 min)
 3. [`kaha-platform/service-architecture.md`](kaha-platform/service-architecture.md) — **the most important page.** The 4 integration patterns + the failure cheat-sheet. Read it twice (45 min)
 

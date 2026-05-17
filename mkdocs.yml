@@ -54,7 +54,7 @@ validation:
   unrecognized_links: ignore
 
 nav:
-  - Home: HANDOVER.md
+  - Home: index.md
   - Glossary: GLOSSARY.md
   - Onboarding (Day 1 / Week 1): onboarding.md
   - Service Architecture: kaha-platform/service-architecture.md
