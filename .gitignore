@@ -1,0 +1,10 @@
+# Safety net — never commit secrets or code into the docs repo
+server-env.md
+*.env
+.env*
+*credential*
+*secret*
+*-key.json
+*serviceAccount*.json
+*.pem
+node_modules/
